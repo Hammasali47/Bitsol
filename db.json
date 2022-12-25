@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "email": "",
+      "password": "",
+      "FirstName": "Awais",
+      "LastName": "Karni",
+      "UserName": "@Awais",
+      "About": "",
+      "Picture": "",
+      "id": 3
+    },
+    {
+      "email": "hammasali47@gmail.com",
+      "password": "879d789as",
+      "FirstName": "Hammas Ali",
+      "LastName": "Qaiser",
+      "UserName": "Brad",
+      "About": "a,shdkjahskjdhaksjhdkja",
+      "Picture": "C:\\fakepath\\Untitled.png",
+      "id": 5
+    }
+  ]
+}
