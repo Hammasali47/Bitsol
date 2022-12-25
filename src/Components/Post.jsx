@@ -19,7 +19,7 @@ const Post = () => {
   return (
     <div>
       {query.isLoading ?
-        <Spinner size="lg" color="primary">
+        <Spinner size="sm" color="primary">
           Loading....
         </Spinner>
        : 

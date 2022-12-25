@@ -78,13 +78,10 @@ const Form1 = () => {
         <div className='m-auto my-5 p-5 border border-info w-50'>
 
             {query.isLoading ? (
-        <Spinner size="lg" color="primary">
+        <Spinner size="sm" color="primary">
           Loading....
         </Spinner>
       ) : (
-
-            // {
-
         query.isSuccess?    
         <Form onSubmit={handleSubmit}>
             <Label tag="h4">Signup Form</Label>

@@ -18,7 +18,6 @@ function App() {
         <Route path='/post' element={<ApiCaller/>}/>
         <Route path='/post/:id' element={<Post/>}/>
         <Route path='/form' element={<Form1/>}/>
-        <Route path='update/:id' element={<UpdateForm/>}/>
         <Route path='/reduceForm' element={<ReduceForm/>}/>
         </Routes>
       </QueryClientProvider>

@@ -3,6 +3,7 @@ import { useQuery } from "react-query";
 import { Button, Spinner, Table } from "reactstrap";
 import {useNavigate } from "react-router-dom";
 import { ModalDelete } from "./Modal1";
+import ModalUpdate from "./ModalUpdate";
 
 const ApiCaller = () => {
 
@@ -34,7 +35,7 @@ const ApiCaller = () => {
       <Button className="m-4" color="info" onClick={()=>navigate('/form')} >New Record</Button>
 
       {query.isLoading ? (
-        <Spinner size="lg" color="primary">
+        <Spinner size="sm" color="primary">
           Loading....
         </Spinner>
       ) : (
@@ -63,7 +64,9 @@ const ApiCaller = () => {
                         <Button color="info" onClick={()=>navigate(`/post/${post.id}`)}>
                           Check Details
                           </Button>
-                          <Button color="primary" onClick={()=>navigate(`/update/${post.id}`)} >Update</Button>
+                          {/* <Button color="primary" onClick={()=>navigate(`/update/${post.id}`)} >Update</Button> */}
+                          <ModalUpdate buttonLabel="Update" id={post.id}/>
+
                           <ModalDelete buttonLabel="Delete" id={post.id}/>
                       </td>
                     </tr>
