@@ -64,7 +64,27 @@ const loginUser = async (req, res) => {
   }
 };
 
+const getProfile =async (req,res) =>{
+    const user1 = req.user;
+    try {
+        
+        const user = await User.findById(user1.id)
+
+        res.status(200).send({
+            status:true,
+            user  
+        })
+
+    } catch (error) {
+        res.status(500).send({
+            status: false,
+            message: "Something went wrong"
+        })
+    }
+}
+
 module.exports = {
   registerUser,
-  loginUser
+  loginUser,
+  getProfile
 };
