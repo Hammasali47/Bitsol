@@ -23,7 +23,7 @@ const isDeleted = async(req,res,next)=>{
     const user = await User.findOne({_id:user1.id, isDeleted:false})
 
     if(!user){
-        res.status(400).send(
+        return res.status(400).send(
             {
                 status:false,
                 message:"User not found"
